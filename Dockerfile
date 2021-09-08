@@ -8,4 +8,6 @@ WORKDIR /app
 
 RUN nix-build
 
+COPY .dbcriticrc /app/.dbcriticrc
+
 CMD [ "/app/result/bin/dbcritic" ]
